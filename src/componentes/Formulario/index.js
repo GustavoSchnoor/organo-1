@@ -15,10 +15,10 @@ const Formulario = ({aoCadastrar, times}) => {
         evento.preventDefault()
         console.log('form enviado', nome, cargo, imagem, time )
         aoCadastrar({
-            nome,
-            cargo,
-            imagem,
-            time
+            nome: nome,
+            cargo: cargo,
+            imagem: imagem,
+            time: time
         })
     }
 
