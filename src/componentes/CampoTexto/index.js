@@ -1,6 +1,6 @@
 import './campo-texto.css'
 
-const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
+const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio}) => {
     return (<div className='campo-texto'>
         <label>{label}</label>
         <input value={valor} onChange={evento => aoAlterado(evento.target.value)} required={obrigatorio} placeholder={placeholder}/> 
